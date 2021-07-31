@@ -1,0 +1,44 @@
+.newsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 50px;
+}
+
+.newsCard {
+  list-style: none;
+  text-align: center;
+}
+.gridImg {
+  border-radius: 10px;
+  background-color: azure;
+  width: 50px;
+  height: 50px;
+}
+
+.gridTitle {
+  font-size: 0.7em;
+  width: 50px;
+  margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+  .newsContainer {
+    display: grid;
+    gap: 20px;
+    padding: 30px;
+    justify-content: center;
+  }
+  .gridImg {
+    border-radius: 10px;
+    background-color: azure;
+    width: 150px;
+    height: 150px;
+  }
+
+  .gridTitle {
+    font-size: 0.7em;
+    width: 150px;
+    margin: 0 auto;
+  }
+}

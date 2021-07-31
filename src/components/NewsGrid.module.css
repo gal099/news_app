@@ -1,0 +1,49 @@
+.newsGridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 150px);
+  gap: 20px;
+  padding: 30px;
+  justify-content: center;
+}
+
+.newsCard {
+  list-style: none;
+  text-align: center;
+}
+.gridImg {
+  border-radius: 10px;
+  background-color: azure;
+  width: 150px;
+  height: 150px;
+}
+
+.gridTitle {
+  font-size: 0.7em;
+  width: 150px;
+  margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+  .newsGridContainer {
+    grid-template-columns: repeat(auto-fill, 250px);
+    gap: 20px;
+    padding: 30px;
+  }
+
+  .newsCard {
+    list-style: none;
+    text-align: center;
+  }
+  .gridImg {
+    border-radius: 10px;
+    background-color: azure;
+    width: 250px;
+    height: 250px;
+  }
+
+  .gridTitle {
+    font-size: 0.7em;
+    width: 250px;
+    margin: 0 auto;
+  }
+}
