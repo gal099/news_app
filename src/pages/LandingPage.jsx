@@ -1,5 +1,5 @@
 import { Main } from '../components/Main';
-import { Sidebar1 } from '../components/Sidebar1';
+import { Sidebar } from '../components/Sidebar';
 
 import styles from './LandingPage.module.css';
 
@@ -8,10 +8,10 @@ export function LandingPage() {
     <main>
       <div className={styles.gridContainer}>
         <header className={styles.header}>NOTICIAS</header>
-        <nav className={styles.navbar}>
-          <Sidebar1 />
-        </nav>
-        <aside className={styles.sidebar}>SIDEBAR</aside>
+        <nav className={styles.navbar}>NAVBAR</nav>
+        <aside className={styles.sidebar}>
+          <Sidebar />
+        </aside>
         <Main className={styles.mainComponent} />
         <footer className={styles.footer}>FOOTER</footer>
       </div>
