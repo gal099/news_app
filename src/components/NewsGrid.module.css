@@ -18,7 +18,8 @@
 }
 
 .gridTitle {
-  font-size: 0.7em;
+  font-family: 'EB Garamond', serif;
+  font-size: 0.8em;
   width: 150px;
   margin: 0 auto;
 }
@@ -42,7 +43,7 @@
   }
 
   .gridTitle {
-    font-size: 0.7em;
+    font-size: 1em;
     width: 250px;
     margin: 0 auto;
   }

@@ -14,7 +14,6 @@
 
 .mainTitle {
   font-family: 'EB Garamond', serif;
-
   width: 95%;
   margin: 5px auto;
 }
@@ -33,11 +32,18 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    max-height: 500px;
   }
   .mainNewsContainer > * {
-    max-width: 300px;
+    max-width: 500px;
     margin: 15px;
     height: auto;
+  }
+
+  .mainTitle {
+    font-size: 2em;
+  }
+
+  .mainDescription {
+    font-size: 1.5em;
   }
 }
