@@ -19,10 +19,22 @@ export function MainNews() {
 
   return (
     <div className={styles.mainNewsContainer}>
-      <img className={styles.mainImg} src={news.urlToImage} alt={news.title} />
+      <a href={news.url}>
+        <img
+          className={styles.mainImg}
+          src={news.urlToImage}
+          alt={news.title}
+        />
+      </a>
+
       <div>
-        <h2 className={styles.mainTitle}>{news.title}</h2>
-        <p className={styles.mainDescription}>{news.description} </p>
+        <a href={news.url}>
+          <h2 className={styles.mainTitle}>{news.title}</h2>
+        </a>
+
+        <a href={news.url}>
+          <p className={styles.mainDescription}>{news.description} </p>
+        </a>
       </div>
     </div>
   );
