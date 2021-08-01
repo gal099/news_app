@@ -7,7 +7,7 @@ export function LandingPage() {
   return (
     <main>
       <div className={styles.gridContainer}>
-        <header className={styles.header}>NOTICIAS</header>
+        <header className={styles.header}>PORTAL DE NOTICIAS</header>
         <nav className={styles.navbar}>NAVBAR</nav>
         <aside className={styles.sidebar}>
           <Sidebar />
