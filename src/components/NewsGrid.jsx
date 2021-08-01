@@ -21,12 +21,17 @@ export function NewsGrid() {
     <ul className={styles.newsGridContainer}>
       {news.map((elem) => (
         <li key={elem.url} className={styles.newsCard}>
-          <img
-            className={styles.gridImg}
-            src={elem.urlToImage}
-            alt={elem.title}
-          />
-          <div className={styles.gridTitle}>{elem.title}</div>
+          <a href={elem.url}>
+            <img
+              className={styles.gridImg}
+              src={elem.urlToImage}
+              alt={elem.title}
+            />
+          </a>
+
+          <a href={elem.url}>
+            <div className={styles.gridTitle}>{elem.title}</div>
+          </a>
         </li>
       ))}
     </ul>
