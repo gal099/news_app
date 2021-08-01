@@ -21,14 +21,16 @@ export function Sidebar() {
     <ul className={styles.newsContainer}>
       <h3 className={styles.newsContainerTitle}>DEPORTES</h3>
       {news.map((elem, i) => (
-        <li key={elem.url} className={styles.newsCard}>
-          <img
-            className={styles.newsCardImg}
-            src={elem.urlToImage}
-            alt={elem.title}
-          />
-          <div className={styles.newsCardTitle}>{elem.title}</div>
-        </li>
+        <a href={elem.url} key={elem.url}>
+          <li className={styles.newsCard}>
+            <img
+              className={styles.newsCardImg}
+              src={elem.urlToImage}
+              alt={elem.title}
+            />
+            <div className={styles.newsCardTitle}>{elem.title}</div>
+          </li>
+        </a>
       ))}
     </ul>
   );
