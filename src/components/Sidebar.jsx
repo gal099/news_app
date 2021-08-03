@@ -21,8 +21,8 @@ export function Sidebar() {
     <ul className={styles.newsContainer}>
       <h3 className={styles.newsContainerTitle}>DEPORTES</h3>
       {news.map((elem, i) => (
-        <li className={styles.newsCard}>
-          <a href={elem.url} key={elem.url}>
+        <li key={elem.url} className={styles.newsCard}>
+          <a href={elem.url}>
             <img
               className={styles.newsCardImg}
               src={elem.urlToImage}
