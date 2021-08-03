@@ -6,6 +6,10 @@
   font-family: 'EB Garamond', serif;
 }
 
+.newsContainerTitle {
+  font-size: 1, 5em;
+}
+
 .newsCard {
   box-shadow: -1px 1px 7px 0px rgb(124, 124, 124);
   border-radius: 10px;
